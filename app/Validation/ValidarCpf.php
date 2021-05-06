@@ -4,7 +4,7 @@ namespace App\Validation;
 
 class ValidarCpf
 {
-    function ValidarCpf($cpf,&$error = null): bool
+    function ValidarCpf($cpf,string &$error = null): bool
     {
 
         // Extrai somente os números

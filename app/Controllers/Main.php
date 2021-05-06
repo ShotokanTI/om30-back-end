@@ -104,6 +104,7 @@ class Main extends BaseController
 				}
 			}
 		} catch (\Exception $e) {
+			echo $e->getMessage();
 			return json_encode($pacienteModel->errors(), $this->prettyJson);
 		}
 	}

@@ -48,6 +48,8 @@ return [
 	'numeric'               => 'O campo {field} deve conter apenas números.',
 	'regex_match'           => 'O campo {field} não está no formato correto.',
 	'required'              => 'O campo {field} é requerido.',
+	'ValidarCpf' => 'O campo Cpf não é válido',
+	'ValidarCns' => 'O campo Cns não é válido',
 	'required_with'         => 'O campo {field} é requerido quando {param} está presente.',
 	'required_without'      => 'O campo {field} é requerido quando {param} não está presente.',
 	'string'                => 'O campo {field} deve ser uma string válida.',

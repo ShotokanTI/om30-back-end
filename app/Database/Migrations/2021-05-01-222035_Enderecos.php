@@ -29,10 +29,6 @@ class Enderecos extends Migration
 				'type' => 'varchar',
 				'constraint' => '40',
 			],
-			'Complemento' => [
-				'type' => 'varchar',
-				'constraint' => '60',
-			],
 			'Bairro' => [
 				'type' => 'varchar',
 				'constraint' => '30',
@@ -44,19 +40,6 @@ class Enderecos extends Migration
 			'Uf' => [
 				'type' => 'CHAR',
 				'constraint' => 2,
-			],
-			'Ibge' => [
-				'type' => 'integer',
-			],
-			'Gia' => [
-				'type' => 'integer',
-			],
-			'ddd' => [
-				'type' => 'integer',
-				'constraint' => 2
-			],
-			'Siafi' => [
-				'type' => 'integer',
 			],
 		]);
 		$this->forge->addKey('id', true, true);

@@ -39,7 +39,7 @@ class Paciente extends Model
 			'rules' => 'required',
 		],
 		'Cpf' => 'required|is_unique[pacientes.Cpf]|string|ValidarCpf',
-		'CNS' => 'required|integer|is_unique[pacientes.CNS]|ValidaCns',
+		'CNS' => 'required|integer|is_unique[pacientes.CNS]|ValidarCns',
 	];
 	protected $validationMessages   = [];
 	protected $skipValidation       = false;

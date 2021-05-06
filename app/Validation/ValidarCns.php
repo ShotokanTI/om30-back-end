@@ -4,7 +4,7 @@ namespace App\Validation;
 
 class ValidarCns
 {
-	public function ValidaCns($cns,string &$error = null) : bool{
+	public function ValidarCns($cns,string &$error = null) : bool{
         $pis = substr($cns,0,11);
         $soma = 0;
         for ( $i = 0, $j = strlen($pis), $k = 15; $i < $j; $i++, $k-- )
@@ -25,7 +25,7 @@ class ValidarCns
         }
         if ( $cns != $resultado )
         {
-			$error = lang('Validation.ValidaCNS');
+			$error = lang('Validation.ValidarCns');
             return false;
         }
         else

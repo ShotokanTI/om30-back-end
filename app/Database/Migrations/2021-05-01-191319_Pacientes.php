@@ -13,6 +13,7 @@ class Pacientes extends Migration
 				'type' => 'INT',
 				'constraint' => 5,
 				'unsigned' => TRUE,
+				'auto_increment' => TRUE
 			],
 			'Nome' => [
 				'type' => 'varchar',
