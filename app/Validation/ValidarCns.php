@@ -25,7 +25,7 @@ class ValidarCns
         }
         if ( $cns != $resultado )
         {
-			$error = lang('Validation.ValidaCns');
+			$error = lang('Validation.ValidaCNS');
             return false;
         }
         else
