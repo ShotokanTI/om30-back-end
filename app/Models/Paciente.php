@@ -38,7 +38,7 @@ class Paciente extends Model
 			'label' => 'Data de nascimento',
 			'rules' => 'required',
 		],
-		'Cpf' => 'required|is_unique[pacientes.Cpf]|string',
+		'Cpf' => 'required|is_unique[pacientes.Cpf]|string|ValidarCpf',
 		'CNS' => 'required|integer|is_unique[pacientes.CNS]|ValidaCns',
 	];
 	protected $validationMessages   = [];
